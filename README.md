@@ -19,11 +19,11 @@ The Sumobot leverages its front ultrasonic sensor to identify the opponent and i
 
 **Pathfinder Mode:**
 
-Navigation Logic: The robot uses three ultrasonic sensors to evaluate distances to obstacles on its front, left, and right. Based on these measurements, it determines the best path to proceed.
+Navigation Logic: The robot uses three ultrasonic sensors to evaluate distances to obstacles on its front, left, and right. Based on these measurements, it determines the most suitable direction to move forward.
 
-Proportional Control: If the robot deviates from its intended path or comes too close to obstacles, it employs a proportional control algorithm to correct its course and stay centered.
+Proportional Control: If the robot deviates from the center path or approaches an obstacle too closely on either side, it employs a proportional control algorithm to adjust its course and maintain a balanced distance from the walls.
 
-Error Correction: The robot constantly monitors its position. If it nears a collision on either side, it adjusts its motor speeds proportionally to steer back to the center.
+Error Correction: The robot constantly assesses its position. If it moves too close to an obstacle on either side or faces a potential collision, it corrects its path by adjusting the motor speeds proportionally to the detected error.
 
 **Schematic Diagram**
 
